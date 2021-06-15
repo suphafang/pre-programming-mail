@@ -5,4 +5,4 @@ What's New
 
 What's Pre-programming 2564 Mail.
 
-  The Pre-programming is an event that helps IT KMITL's freshmen to learn about the basics of programming by using the Python language. So, for easily the event team to management. We've developed this web application for assists them to send a username, password, or any details to a freshmen email.
+  Pre-programming is an event that helps IT KMITL's freshmen to learn about the basics of programming by using the Python language. So for the team to manage the event easily. We've developed this web application for assists them to send a username, password, or any details to a freshmen email quickly and easily.
