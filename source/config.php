@@ -6,6 +6,11 @@
 	define('HOST_PASS', '@Pre-programming2021');
 	define('HOST_DATABASE', 'u693904119_prepro');
 
+	// define('HOST_HOSTNAME', 'localhost');
+	// define('HOST_USER', 'root');
+	// define('HOST_PASS', '');
+	// define('HOST_DATABASE', 'pre_programming');
+
 	class conn {
 		static public function mysqli() {
 			$conn = new mysqli(HOST_HOSTNAME, HOST_USER, HOST_PASS, HOST_DATABASE);
