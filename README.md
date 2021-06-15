@@ -1,4 +1,4 @@
-Pre-programming 2564 Mail version 1.1
+Pre-programming Mail version 1.1
 
 What's New
 - Update some words in email template.
