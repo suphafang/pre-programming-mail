@@ -98,7 +98,7 @@
 
 		    setInterval( function () {
 			    listTable.ajax.reload( null, false ); // user paging is not reset on reload
-			}, 10*1000 );
+			}, 2*1000 );
 		} );
 	</script>
 
