@@ -83,7 +83,7 @@
             $mail->CharSet = 'UTF-8';
 
             //Recipients
-            $mail->setFrom('pre-programming@codingtime.dev', 'Pre-programming');
+            $mail->setFrom('no-reply@codingtime.dev', 'Pre-programming');
             $mail->addAddress($json_data->email, $json_data->name);     //Add a recipient
 
             //Content
