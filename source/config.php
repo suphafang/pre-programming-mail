@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set("Asia/Bangkok");
 
-	define('HOST_HOSTNAME', 'localhost');
+	define('HOST_HOSTNAME', '151.106.124.152');
 	define('HOST_USER', 'u693904119_prepro');
 	define('HOST_PASS', '@Pre-programming2021');
 	define('HOST_DATABASE', 'u693904119_prepro');

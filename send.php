@@ -27,7 +27,13 @@
 
 	$data = $result->fetch_object();
 
-	if ($result->num_rows < 1 || $data->email_log_id !== null) {
+	// if ($result->num_rows < 1 || $data->email_log_id !== null) {
+	// 	http_response_code(400);
+	// 	include('400.html');
+	// 	die();
+	// }
+
+	if ($result->num_rows < 1) {
 		http_response_code(400);
 		include('400.html');
 		die();
@@ -42,7 +48,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<link rel="icon" href="icon.png">
-	<title>Send mail to <?php echo $data->list_firstname.' '.$data->list_lastname; ?> | Pre-programming Mail</title>
+	<title>Detail of <?php echo $data->list_firstname.' '.$data->list_lastname; ?> | Pre-programming Mail</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sarabun:wght@300;400;500;600;700&display=swap');
 		* {
@@ -108,7 +114,7 @@
 										<label class="form-label">E-Judge Password</label>
 										<input class="form-control form-control-sm rounded-0" type="text" placeholder="E-Judge Password" required readonly value="<?php echo $data->list_ejudge_password; ?>" id="password"></input>
 									</div>
-									<div class="col-12">
+									<!-- <div class="col-12">
 										<label class="form-label">Question & Comment</label>
 										<textarea class="form-control form-control-sm rounded-0" placeholder="Question" rows="4" required readonly id="question"><?php 
 											if ($data->list_comment === '') {
@@ -117,23 +123,23 @@
 												echo $data->list_comment;
 											}
 										?></textarea>
-									</div>
-									<div class="col-12">
+									</div> -->
+									<!-- <div class="col-12">
 										<label class="form-label">Reply</label>
 										<textarea class="form-control form-control-sm rounded-0" placeholder="Reply" rows="4" required autofocus id="answer"></textarea>
 									</div>
 									<div class="col-12">
 										<label class="form-label">Sender name</label>
 										<input class="form-control form-control-sm rounded-0" type="text" placeholder="Sender name" required id="senior"></input>
-									</div>
+									</div> -->
 								</div>
 							
 						</div>
 					</div>
 
 					<p class="text-end">
-						<button class="btn btn-outline-secondary rounded-0 me-md-2" onclick="window.history.back();" type="button">Cancel</button>
-						<button class="btn btn-primary rounded-0" type="submit">Send email</button>
+						<button class="btn btn-outline-secondary rounded-0 me-md-2" onclick="window.history.back();" type="button">Back</button>
+						<!-- <button class="btn btn-primary rounded-0" type="submit">Send email</button> -->
 					</p>
 
 				</form>
