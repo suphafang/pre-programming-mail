@@ -82,11 +82,11 @@
 			        {
 			        	data: null,
 			        	render: function (data, type, row) {
-			        		// if (row.SEND) {
-			        		// 	return '<span class="badge bg-success rounded-0" style="font-weight: 500;">Sent</span>';
-			        		// } else {
+			        		if (row.SEND) {
+			        			return '<span class="badge bg-success rounded-0" style="font-weight: 500;">Sent</span>';
+			        		} else {
 			        			return '<a class="btn btn-outline-primary btn-sm rounded-0" href="send.php?hash='+row.HASH+'">View</a>';
-			        		// }
+			        		}
         				}
 			        }
 			    ],

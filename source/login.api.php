@@ -8,7 +8,7 @@
         die();
 	}
 
-	if (strtolower($json_data->username) === "preprogramming" && $json_data->password === "password") {
+	if (strtolower($json_data->username) === "admin" && $json_data->password === "password") {
 		echo json_encode(true, JSON_PRETTY_PRINT);
 		session_start();
 		$_SESSION['authorization'] = true;
